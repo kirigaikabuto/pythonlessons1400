@@ -1,2 +1,7 @@
-Ввод:20 30 40 11 23 41 23 40
-Вывод:20 30 40 40
+s = input()
+numbers = [int(i) for i in s.split(" ")]
+chet = []
+for i in numbers:
+    if i % 2 == 0:
+        print(i)
+print(chet)
