@@ -1,4 +1,19 @@
-text = "Singapore efficially the Republic of Singapore, is a sovereign island city-state in maritime Southeast Asia. It lies about one degree of latitude (137 kilometres or 85 miles) north of the equator, off the southern tip of the Malay Peninsula, bordering the Straits of Malacca to the west, the Riau Islands (Indonesia) to the south, and the South China Sea to the east. The country's territory is composed of one main island, 63 satellite islands and islets, and one outlying islet, the combined area of which has increased by 25% since the country's independence as a result of extensive land reclamation projects. It has the second greatest population density in the world. With a multicultural population and recognizing the need to respect cultural identities, Singapore has four official languages: English, Malay, Mandarin Chinese, and Tamil. English is the lingua franca. Multiracialism is enshrined in the constitution and continues to shape national policies in education, housing, and politics."
-words = text.split(" ")
+s = "Modern Singapore was founded in 1819 by Sir Stamford Raffles as a trading post of the British Empire. In 1867, the colonies in Southeast Asia were reorganised and Singapore came under the direct control of Britain as part of the Straits Settlements. During the Second World War, Singapore was occupied by Japan in 1942, and returned to British control as a separate crown colony following Japan's surrender in 1945. Singapore gained self-governance in 1959 and in 1963 became part of the new federation of Malaysia, alongside Malaya, North Borneo, and Sarawak. Ideological differences led to Singapore being expelled from the federation two years later and it became an independent country."
+words = s.split(",")
+s = "".join(words)
+words = s.split(".")
+s = "".join(words)
+words = s.split(" ")
+alpha = []
+numbers = []
+others = []
 for i in words:
-    print(i)
+    if i.isalpha():
+        alpha.append(i)
+    elif i.isnumeric():
+        numbers.append(i)
+    else:
+        others.append(i)
+print(alpha)
+print(numbers)
+print(others)
