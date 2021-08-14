@@ -16,3 +16,5 @@ In 1776, in Philadelphia, the Second Continental Congress declared the independe
 
 1) вывести количество слов в каждом предложениии
 предложение количество_слов
+
+2) вывести сколько раз повторяется in, the, of, as, by, it
