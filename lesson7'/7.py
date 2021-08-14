@@ -4,3 +4,4 @@ In 1776, in Philadelphia, the Second Continental Congress declared the independe
 numbers = []
 alpha = []
 others = []
+titles = []
